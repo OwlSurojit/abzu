@@ -13,7 +13,9 @@ See the Licence for the specific language governing permissions and
 limitations under the Licence. */
 
 import { fade } from "material-ui/utils/colorManipulator";
+import { markBranchHit } from "../../../test/instrumentation/coverageData";
 import { getTiamatEnv } from "../../themeConfig";
+
 
 export const primary = "#5AC39A";
 export const primaryDarker = "#181C56";
@@ -31,12 +33,16 @@ export const getEnvColor = (env) => {
   let currentEnv = env || getTiamatEnv();
   switch (currentEnv.toLowerCase()) {
     case "development":
+      markBranchHit("getEnvColor", 0);
       return "#457645";
     case "test":
+      markBranchHit("getEnvColor", 1);
       return "#d18e25";
     case "prod":
+      markBranchHit("getEnvColor", 2);
       return darkColor;
     default:
+      markBranchHit("getEnvColor", 3);
       return darkColor;
   }
 };

@@ -13,6 +13,7 @@ See the Licence for the specific language governing permissions and
 limitations under the Licence. */
 
 import moment from "moment";
+import { markBranchHit } from "../test/instrumentation/coverageData";
 
 export const setDecimalPrecision = (number, n) => {
   if (isNaN(number) || isNaN(n)) {
@@ -50,20 +51,27 @@ export const getCoordinatesFromGeometry = (geometry) => {
 };
 
 export const extractCoordinates = (latLngString) => {
-  if (!latLngString) return null;
+  if (!latLngString) {
+    markBranchHit("extractCoordinates", 0);
+    return null;
+  }
 
   let coords = null;
 
   if (latLngString.indexOf(",") > 1) {
+    markBranchHit("extractCoordinates", 1);
     coords = latLngString.split(",");
   } else {
+    markBranchHit("extractCoordinates", 2);
     coords = latLngString.split(/\s*[\s,]\s*/);
   }
 
   if (coords && coords.length === 2 && !isNaN(coords[0]) && !isNaN(coords[1])) {
+    markBranchHit("extractCoordinates", 3);
     const result = coords.map((c) => setDecimalPrecision(c, 6));
     return result;
   }
+  markBranchHit("extractCoordinates", 4);
   return null;
 };
 

@@ -33,4 +33,18 @@ describe("extractors", () => {
 
     expect(latLngFromTab).toEqual(latLngExpected);
   });
+
+  test("should return null if the provided latlng string is invalid", () => {
+    const latLngFromNull = extractCoordinates(null);
+    expect(latLngFromNull).toEqual(null);
+
+    const latLngFromOneNum = extractCoordinates("123");
+    expect(latLngFromOneNum).toEqual(null);
+
+    const latLngFromNaN = extractCoordinates("abc def");
+    expect(latLngFromNaN).toEqual(null);
+
+    const latLngFromMultipleNums = extractCoordinates("123, 456,  789");
+    expect(latLngFromMultipleNums).toEqual(null);
+  });
 });
