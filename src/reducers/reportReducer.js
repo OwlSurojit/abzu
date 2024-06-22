@@ -14,6 +14,7 @@ limitations under the Licence. */
 
 import * as types from "../actions/Types";
 import formatHelpers from "../modelUtils/mapToClient";
+import { markBranchHit } from "../test/instrumentation/coverageData";
 import { findDuplicateImportedIds } from "../utils/";
 
 export const initialState = {
@@ -21,31 +22,36 @@ export const initialState = {
   results: [],
 };
 
-const reportReducer = (state = initialState, action) => {
+export const reportReducer = (state = initialState, action) => {
   switch (action.type) {
     case types.APOLLO_QUERY_RESULT:
       if (action.operationName === "TopopGraphicalPlacesForReport") {
+        markBranchHit("reportReducer", 0);
         return reduceTopopGraphicalPlacesForReport(state, action);
       } else if (action.operationName === "findStopForReport") {
+        markBranchHit("reportReducer", 1);
         return reduceSearchResultsForReport(state, action);
       } else if (action.operationName === "ParkingForMultipleStopPlaces") {
+        markBranchHit("reportReducer", 2);
         return populateStopPlacesWithParking(state, action.result.data);
       } else {
+        markBranchHit("reportReducer", 3);
         return state;
       }
 
     default:
+      markBranchHit("reportReducer", 4);
       return state;
   }
 };
 
-const reduceTopopGraphicalPlacesForReport = (state, action) => {
+export const reduceTopopGraphicalPlacesForReport = (state, action) => {
   return Object.assign({}, state, {
     topographicalPlaces: action.result.data.topographicPlace,
   });
 };
 
-const reduceSearchResultsForReport = (state, action) => {
+export const reduceSearchResultsForReport = (state, action) => {
   const stops = formatHelpers.mapReportSearchResultsToClientStop(
     action.result.data.stopPlace,
   );
@@ -55,7 +61,7 @@ const reduceSearchResultsForReport = (state, action) => {
   });
 };
 
-const populateStopPlacesWithParking = (state, results) => {
+export const populateStopPlacesWithParking = (state, results) => {
   const stopPlaces = state.results;
   let stopPlacesWithParking = stopPlaces.map((stopPlace) => {
     let aliasedId = stopPlace.id.replace(
