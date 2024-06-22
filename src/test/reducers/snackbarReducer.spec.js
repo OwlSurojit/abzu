@@ -1,4 +1,4 @@
-import rolesReducer, { initialState, getErrorMsg } from '../../reducers/snackbarReducer';
+import rolesReducer, { initialState } from '../../reducers/snackbarReducer';
 import {
   APOLLO_MUTATION_ERROR,
   ERROR,
