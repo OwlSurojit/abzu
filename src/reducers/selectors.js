@@ -12,18 +12,28 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the Licence for the specific language governing permissions and
 limitations under the Licence. */
 
+import { markBranchHit } from "../test/instrumentation/coverageData";
+
+
 export const selectKeyValuesDataSource = (keyValuesOrigin, stopPlace) => {
-  if (!keyValuesOrigin || !keyValuesOrigin.type) return [];
+  if (!keyValuesOrigin || !keyValuesOrigin.type) {
+    markBranchHit("selectKeyValuesDataSource", 0);
+    return []
+  };
 
   let keyValues = [];
 
   if (keyValuesOrigin.type === "stopPlace") {
+    markBranchHit("selectKeyValuesDataSource", 1);
     keyValues = stopPlace.keyValues;
   } else if (keyValuesOrigin.type === "quay") {
+    markBranchHit("selectKeyValuesDataSource", 2);
     let quay = stopPlace.quays[keyValuesOrigin.index];
     if (quay) {
+      markBranchHit("selectKeyValuesDataSource", 3);
       keyValues = stopPlace.quays[keyValuesOrigin.index].keyValues;
     }
   }
+  markBranchHit("selectKeyValuesDataSource", 4);
   return keyValues;
 };

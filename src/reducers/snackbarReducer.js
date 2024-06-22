@@ -18,6 +18,7 @@ import {
   OPENED_SNACKBAR,
   DISMISSED_SNACKBAR,
 } from "../actions/Types";
+import { markBranchHit } from "../test/instrumentation/coverageData";
 
 export const initialState = {
   snackbarOptions: {
@@ -30,6 +31,7 @@ export const initialState = {
 const rolesReducer = (state = initialState, action) => {
   switch (action.type) {
     case APOLLO_MUTATION_ERROR:
+      markBranchHit("rolesReducer", 0);
       return Object.assign({}, state, {
         snackbarOptions: {
           isOpen: true,
@@ -39,6 +41,7 @@ const rolesReducer = (state = initialState, action) => {
       });
 
     case OPENED_SNACKBAR:
+      markBranchHit("rolesReducer", 1);
       return Object.assign({}, state, {
         snackbarOptions: {
           isOpen: true,
@@ -48,9 +51,11 @@ const rolesReducer = (state = initialState, action) => {
       });
 
     case DISMISSED_SNACKBAR:
+      markBranchHit("rolesReducer", 2);
       return Object.assign({}, state, { snackbarOptions: { isOpen: false } });
-
+      
     default:
+      markBranchHit("rolesReducer", 3);
       return state;
   }
 };
