@@ -1,8 +1,13 @@
+import { markBranchHit } from "../test/instrumentation/coverageData";
+
 export const shouldMutateParking = (parking) => {
   // TODO: Do not mutate parking unless there are changes to parking
   if (!parking || !parking.length) {
+    markBranchHit("shouldMutateParking", 0);
     return false;
   }
+
+  markBranchHit("shouldMutateParking", 1);
   return true;
 };
 

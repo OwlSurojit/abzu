@@ -6,7 +6,7 @@ const coverageStateFile = './src/test/instrumentation/coverageState.json';
 const branchCounts = {
     "selectKeyValuesDataSource": 4,
     "rolesReducer": 4,
-    "getSearchPolygon": 2,
+    "shouldMutateParking": 2,
     "reportReducer": 5,
     "extractCoordinates": 5,
     "getEnvColor": 4,
