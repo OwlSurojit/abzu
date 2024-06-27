@@ -150,10 +150,8 @@ We improve the coverage from 0% to 46.66% in the `shouldMutateParking` and from 
 
 ### Overall
 
-before:
 ![](https://i.ibb.co/0rcG5nT/Screenshot-2024-06-27-at-18-10-21.png)
 
-after:
 ![](https://i.ibb.co/wQNm8v4/Screenshot-2024-06-27-at-18-07-02.png)
 
 ## Statement of individual contributions
