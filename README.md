@@ -52,7 +52,7 @@ npm run test -- --coverage
 
 [Commit to the instrumented code to gather coverage measurement.](https://github.com/OwlSurojit/abzu/pull/3/commits/f9d8bdb38116e3ac2a34a8c9af27378b09f3e6ce)
 
-![](https://ibb.co/p2P8LJL)
+![](https://i.ibb.co/cJvHrDr/Screenshot-2024-06-27-at-16-43-09.png)
 
 #### Zoja Gobec
 
@@ -60,7 +60,7 @@ npm run test -- --coverage
 
 [Commit to the instrumented code to gather coverage measurement.](https://github.com/OwlSurojit/abzu/pull/4/commits/04a542085a357379f7eddbec505521a0592765ca)
 
-![](https://ibb.co/fDtMf2Y)
+![](https://i.ibb.co/dm6BFr0/Screenshot-2024-06-27-at-16-42-07.png)
 
 ## Coverage improvement
 
