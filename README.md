@@ -20,6 +20,8 @@ The repository is using *react-scripts* which is internally calling **Jest** for
 npm run test -- --coverage
 ```
 
+![](https://i.ibb.co/0rcG5nT/Screenshot-2024-06-27-at-18-10-21.png)
+
 ### Your own coverage tool
 
 #### Christian Ledgard
