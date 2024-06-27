@@ -66,30 +66,91 @@ npm run test -- --coverage
 
 ### Individual tests
 
-<!-- <The following is supposed to be repeated for each group member> -->
-
 #### Christian Ledgard
 
 `selectKeyValuesDataSource` & `rolesReducer`
 
 [New tests commit](https://github.com/OwlSurojit/abzu/pull/5/commits/59a6e04f68ac5f970d3785a4acd70279973ddbd7)
 
-
-<!-- <Show a patch (diff) or a link to a commit made in your forked repository that shows the new/enhanced test> -->
-
-<!-- <Provide a screenshot of the old coverage results (the same as you already showed above)> -->
 before:
 ![](https://i.ibb.co/DW9m7gG/before-christian.png)
 
-<!-- <Provide a screenshot of the new coverage results> -->
 after:
 ![](https://i.ibb.co/qrQMMLz/Snackbar-Selectors-Unit-Tests.png)
 
-<!-- <State the coverage improvement with a number and elaborate on why the coverage is improved> -->
-
 We improve the coverage from 0% to 100% in the `selectKeyValuesDataSource` and from 66.66% to 100% in the `rolesReducer` function. The different branches were analyzed and we were able to add new tests to coverage missing paths.
 
-<!-- <Provide the same kind of information provided for Test 1> -->
+#### Emilis Masalskis
+
+`getMarkersForMap`
+
+[New tests commit](https://github.com/OwlSurojit/abzu/pull/6/commits/e2f10852939b380a994596db6f765960019bdd89)
+
+before:
+![](https://i.ibb.co/X5zcspJ/Screenshot-2024-06-27-at-17-01-44.png)
+
+after:
+TODO
+
+`getProperZoomLevel`
+
+[New tests commit](https://github.com/OwlSurojit/abzu/pull/6/commits/2e64166098939350bacd2a8b6536ece1746eede9)
+
+before:
+![](https://i.ibb.co/68rGQJ6/Screenshot-2024-06-27-at-17-04-19.png)
+
+after:
+TODO
+
+TODO DESCRIPTION
+
+#### Adrian Müller
+
+`getEnvColor`
+
+[New tests commit](https://github.com/OwlSurojit/abzu/pull/3/commits/f9d8bdb38116e3ac2a34a8c9af27378b09f3e6ce)
+
+before:
+![](https://i.ibb.co/st5qqVB/Screenshot-2024-06-27-at-17-11-41.png)
+
+after:
+TODO
+
+`extractCoordinates`
+
+[New tests commit](https://github.com/OwlSurojit/abzu/pull/3/commits/f9d8bdb38116e3ac2a34a8c9af27378b09f3e6ce)
+
+before:
+![](https://i.ibb.co/4K5X5NP/Screenshot-2024-06-27-at-17-12-08.png)
+
+after:
+TODO
+
+TODO DESCRIPTION
+
+#### Zoja Gobec
+
+`shouldMutateParking`
+
+[New tests commit](https://github.com/OwlSurojit/abzu/pull/4/commits/04a542085a357379f7eddbec505521a0592765ca)
+
+before:
+![](https://i.ibb.co/K5FxPsW/Screenshot-2024-06-27-at-17-09-13.png)
+
+after:
+TODO
+
+`reportReducer`
+
+[New tests commit](https://github.com/OwlSurojit/abzu/pull/4/commits/04a542085a357379f7eddbec505521a0592765ca)
+
+before:
+![](https://i.ibb.co/s5fds8x/Screenshot-2024-06-27-at-17-10-15.png)
+
+after:
+TODO
+
+TODO DESCRIPTION
 
 ### Overall
 
