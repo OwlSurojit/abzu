@@ -52,7 +52,7 @@ npm run test -- --coverage
 
 [Commit to the instrumented code to gather coverage measurement.](https://github.com/OwlSurojit/abzu/pull/3/commits/f9d8bdb38116e3ac2a34a8c9af27378b09f3e6ce)
 
-TODO SCREENSHOT
+![](https://ibb.co/p2P8LJL)
 
 #### Zoja Gobec
 
@@ -60,7 +60,7 @@ TODO SCREENSHOT
 
 [Commit to the instrumented code to gather coverage measurement.](https://github.com/OwlSurojit/abzu/pull/4/commits/04a542085a357379f7eddbec505521a0592765ca)
 
-TODO SCREENSHOT
+![](https://ibb.co/fDtMf2Y)
 
 ## Coverage improvement
 
