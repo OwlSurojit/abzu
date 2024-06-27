@@ -20,11 +20,7 @@ The repository is using *react-scripts* which is internally calling **Jest** for
 npm run test -- --coverage
 ```
 
-<Show the coverage results provided by the existing tool with a screenshot>
-
 ### Your own coverage tool
-
-<The following is supposed to be repeated for each group member>
 
 #### Christian Ledgard
 
@@ -90,7 +86,7 @@ before:
 ![](https://i.ibb.co/X5zcspJ/Screenshot-2024-06-27-at-17-01-44.png)
 
 after:
-TODO
+![](https://i.ibb.co/K2CB15b/Screenshot-2024-06-27-at-17-44-46.png)
 
 `getProperZoomLevel`
 
@@ -100,7 +96,7 @@ before:
 ![](https://i.ibb.co/68rGQJ6/Screenshot-2024-06-27-at-17-04-19.png)
 
 after:
-TODO
+![](https://i.ibb.co/8K6jGnS/Screenshot-2024-06-27-at-17-46-08.png)
 
 TODO DESCRIPTION
 
@@ -114,7 +110,7 @@ before:
 ![](https://i.ibb.co/st5qqVB/Screenshot-2024-06-27-at-17-11-41.png)
 
 after:
-TODO
+![](https://i.ibb.co/gPyqdJR/Screenshot-2024-06-27-at-17-46-55.png)
 
 `extractCoordinates`
 
@@ -124,7 +120,7 @@ before:
 ![](https://i.ibb.co/4K5X5NP/Screenshot-2024-06-27-at-17-12-08.png)
 
 after:
-TODO
+![](https://i.ibb.co/D1F6qqm/Screenshot-2024-06-27-at-17-47-12.png)
 
 TODO DESCRIPTION
 
@@ -138,7 +134,7 @@ before:
 ![](https://i.ibb.co/K5FxPsW/Screenshot-2024-06-27-at-17-09-13.png)
 
 after:
-TODO
+![](https://i.ibb.co/4tn7jd8/Screenshot-2024-06-27-at-17-43-25.png)
 
 `reportReducer`
 
@@ -148,7 +144,7 @@ before:
 ![](https://i.ibb.co/s5fds8x/Screenshot-2024-06-27-at-17-10-15.png)
 
 after:
-TODO
+![](https://i.ibb.co/xsnqHPr/Screenshot-2024-06-27-at-17-43-52.png)
 
 TODO DESCRIPTION
 
