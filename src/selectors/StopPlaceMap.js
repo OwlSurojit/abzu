@@ -12,6 +12,8 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the Licence for the specific language governing permissions and
 limitations under the Licence. */
 
+import { markBranchHit } from "../test/instrumentation/coverageData";
+
 export const getMarkersForMap = ({ stopPlace, user }) => {
   const { newStop, findCoordinates, activeSearchResult, neighbourStops } =
     stopPlace;
@@ -26,18 +28,22 @@ export const getMarkersForMap = ({ stopPlace, user }) => {
     activeSearchResult.children
   ) {
     markers = markers.concat(activeSearchResult.children);
+    markBranchHit("getMarkersForMap", 0);
   }
 
   if (newStop && isCreatingNewStop) {
     markers = markers.concat(newStop);
+    markBranchHit("getMarkersForMap", 1);
   }
 
   if (neighbourStops && neighbourStops.length) {
     markers = markers.concat(neighbourStops);
+    markBranchHit("getMarkersForMap", 2);
   }
 
   if (findCoordinates) {
     markers = markers.concat(findCoordinates);
+    markBranchHit("getMarkersForMap", 3);
   }
 
   markers = markers.filter((m) => !m.permanentlyTerminated);
