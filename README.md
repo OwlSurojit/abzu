@@ -98,7 +98,7 @@ before:
 after:
 ![](https://i.ibb.co/8K6jGnS/Screenshot-2024-06-27-at-17-46-08.png)
 
-TODO DESCRIPTION
+We improve the coverage from 0% to 100% in the `getMarkersForMap` and from 43.63% to 48.33% in the `getProperZoomLevel` function. The different branches were analyzed and we were able to add new tests to coverage missing paths.
 
 #### Adrian Müller
 
@@ -122,7 +122,7 @@ before:
 after:
 ![](https://i.ibb.co/D1F6qqm/Screenshot-2024-06-27-at-17-47-12.png)
 
-TODO DESCRIPTION
+We improve the coverage from 0% to 100% in the `getEnvColor` and from 78.88% to 81.25% in the `extractCoordinates` function. The different branches were analyzed and we were able to add new tests to coverage missing paths.
 
 #### Zoja Gobec
 
@@ -146,7 +146,7 @@ before:
 after:
 ![](https://i.ibb.co/xsnqHPr/Screenshot-2024-06-27-at-17-43-52.png)
 
-TODO DESCRIPTION
+We improve the coverage from 0% to 46.66% in the `shouldMutateParking` and from 0% to 92.59% in the `reportReducer` function. The different branches were analyzed and we were able to add new tests to coverage missing paths.
 
 ### Overall
 
