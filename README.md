@@ -150,9 +150,11 @@ We improve the coverage from 0% to 46.66% in the `shouldMutateParking` and from 
 
 ### Overall
 
-<!-- <Provide a screenshot of the old coverage results by running an existing tool (the same as you already showed above)> -->
+before:
+![](https://i.ibb.co/0rcG5nT/Screenshot-2024-06-27-at-18-10-21.png)
 
-<!-- <Provide a screenshot of the new coverage results by running the existing tool using all test modifications made by the group> -->
+after:
+![](https://i.ibb.co/wQNm8v4/Screenshot-2024-06-27-at-18-07-02.png)
 
 ## Statement of individual contributions
 
